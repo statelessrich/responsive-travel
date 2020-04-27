@@ -1,0 +1,122 @@
+@import "variables.scss";
+
+html,
+body {
+  font-family: "Open Sans", sans-serif;
+  line-height: 1.7rem;
+}
+
+strong {
+  font-weight: 600;
+}
+
+h1,
+h2,
+p,
+.btn {
+  font-weight: 300;
+}
+
+h1 {
+  font-size: 2rem;
+  line-height: 2.5rem;
+  text-transform: capitalize;
+}
+
+h2 {
+  font-size: 1.4rem;
+  line-height: 2.2rem;
+}
+
+.btn {
+  border-radius: 0;
+}
+
+// custom hamburger colors
+.custom-toggler.navbar-toggler {
+  border-color: $white;
+
+  &:focus,
+  &:active {
+    outline: none;
+  }
+
+  .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+  }
+}
+
+.navbar-dark .navbar-nav .nav-link {
+  color: $white;
+}
+
+// hero
+.hero {
+  color: $white;
+  background-image: url("/img/hero.jpg");
+  background-size: cover;
+  position: relative;
+
+  .overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+
+  .hero-content {
+    position: relative;
+    z-index: 1;
+  }
+}
+
+// about
+.about {
+  .about-content {
+    display: flex;
+    flex-direction: column;
+
+    img {
+      max-width: 540px;
+    }
+  }
+}
+
+// plan
+.plan {
+  background-color: $blue;
+  color: $white;
+
+  .steps {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+
+    .step {
+      margin: 1rem 0;
+      max-width: 300px;
+    }
+  }
+
+  h1,
+  h2 {
+    font-weight: 400;
+  }
+
+  h2 {
+    text-transform: uppercase;
+    margin: 1rem 0;
+  }
+
+  .icon {
+    color: $blue;
+  }
+}
+
+.footer {
+  background-color: rgb(43, 43, 43);
+  color: rgb(177, 177, 177);
+}

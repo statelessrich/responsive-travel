@@ -1,0 +1,93 @@
+// large screens
+@media (min-width: 1378px) {
+  h1 {
+    font-size: 3rem;
+    line-height: 3.5rem;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+
+  li.nav-item {
+    font-size: inherit;
+    line-height: inherit;
+  }
+
+  .buttons {
+    margin: 3rem 0;
+
+    .btn {
+      width: 150px;
+      height: 45px;
+      font-size: 1.3rem;
+
+      &.btn-outline-light:active {
+        background-color: inherit;
+        color: inherit;
+      }
+    }
+  }
+
+  // hero
+  .hero {
+    height: 100vh;
+    background-position: center;
+
+    .hero-copy {
+      margin-top: 10rem;
+      margin-left: 3rem;
+    }
+  }
+
+  // about
+  .about {
+    margin: 5rem 10rem;
+
+    .about-content {
+      flex-direction: row;
+
+      .about-copy {
+        margin-top: 1.5rem;
+        margin-right: 5rem;
+      }
+
+      img {
+        height: 370px;
+      }
+    }
+  }
+
+  // plan
+  .plan {
+    .steps {
+      flex-direction: row;
+
+      .step {
+        margin: 3rem 4rem;
+      }
+    }
+  }
+}
+
+// medium screens
+@media (min-width: 992px) {
+  .navbar {
+    padding: 1.5rem 1rem;
+    margin: 0 5rem;
+
+    .navbar-nav {
+      margin-left: auto;
+      border-bottom: none;
+    }
+
+    .navbar-brand {
+      font-size: 2rem;
+    }
+
+    .nav-link {
+      font-size: 1.3rem;
+      margin-left: 2rem;
+    }
+  }
+}
